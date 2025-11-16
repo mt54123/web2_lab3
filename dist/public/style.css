@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FF33CC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #00FF00;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00FF00;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#canvas {
+    background-color: black;
+    border: 5px solid white;
+    display: block;
+}

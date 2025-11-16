@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "none",
+    "rootDir": "public",
+    "outDir": "dist/public",
+    "declaration": false,
+    "sourceMap": true,
+    "types": []
+  },
+  "include": ["public/**/*.ts"]
+}

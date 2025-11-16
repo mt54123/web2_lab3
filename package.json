@@ -1,0 +1,33 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "copy:public": "node public/copy.js",
+    "build:backend": "tsc -p tsconfig.backend.json",
+    "build:frontend": "tsc -p tsconfig.frontend.json",
+    "build": "npm run build:backend && npm run copy:public && npm run build:frontend",
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node-esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/express-session": "^1.18.2",
+    "@types/node": "^24.10.1",
+    "cpx": "^1.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2"
+  }
+}
