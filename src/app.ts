@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://web2-lab2-kt7i.onrender.com"
+  "https://web2-lab3-pcqh.onrender.com"
 ];
 
 app.use(cors({
@@ -41,6 +41,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (_req, res) => {
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
+
 
 
 export {app};
